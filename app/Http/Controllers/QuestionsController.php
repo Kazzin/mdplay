@@ -18,6 +18,14 @@ class QuestionsController extends Controller
         return view('game.percentaje_question')->with(["question" => $question]);
     }
 
+    public function next(Request $request)
+    {
+        if($request->ajax()) {
+            $questions = Question::all();
+            return Response($questions);
+        }
+    }
+
     /**
      * Show the form for creating a new resource.
      *

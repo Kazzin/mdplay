@@ -14,13 +14,13 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/responsive.css') }}" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/css/bootstrap-slider.min.css" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
 </head>
 <body>
-    <div>
+    <div id="game-container">
 
         <div class="game-pane col-xs-12 col-sm-12 col-md-6 shadow"
-        style="z-index: 1; background: url('http://nuevoostendehotel.com.ar/wp-content/uploads/2015/12/Mardelplata-3.jpg')">
+        style="z-index: 1; background: url('http://www.ironman.com/~/media/1b2dfd2bab684b5d83f65c5f542dff0a/03.jpg?w=1600&h=980&c=1')">
             @yield('first_pane')
         </div>
 
@@ -28,6 +28,7 @@
         style="background: #eceff1 ">
         <div class="container">
             <h2>Respuesta</h2>
+            <hr>
             @yield('second_pane')
             </div>
 

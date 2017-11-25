@@ -15,6 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/game/questions/next', 'QuestionsController@next')->name('questions.next');
 Route::resource('/game', 'QuestionsController');
 
 Auth::routes();
