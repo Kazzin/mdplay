@@ -1,7 +1,7 @@
 @extends('layouts.game')
 
 @section('first_pane')
-Hola
+<h1 style="color: white">Pregunta de ejemplo</h1>
 @endsection
 
 @section('second_pane')

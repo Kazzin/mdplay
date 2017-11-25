@@ -15,9 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/game', function(){
-    return view('game.game_example');
-});
+Route::resource('/game', 'QuestionsController');
 
 Auth::routes();
 

@@ -1,6 +1,7 @@
 /* Small devices (landscape phones, 576px and up) */
-@media (max-width: 576px) { 
+@media (min-width: 576px) { 
     .game-pane {
+        width: 100%;
         min-height: 50vh;
         max-height: 50vh;
         height: 50vh;
@@ -8,17 +9,19 @@
 }
 
 /* Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) { 
+@media (min-width: 768px) { 
     .game-pane {
+        width: 100%;
         min-height: 50vh;
         max-height: 50vh;
-        height: 50vh;
+        height: 50vh; 
     }
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (max-width: 992px) { 
+@media (min-width: 992px) { 
     .game-pane {
+        width: 50%;
         min-height: 50vh;
         max-height: 50vh;
         height: 50vh;
@@ -26,10 +29,21 @@
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (max-width: 1200px) { 
+@media (min-width: 1200px) { 
     .game-pane {
+        width: 50%;
         min-height: 100vh;
         max-height: 100vh;
         height: 100vh;
     }
+}
+
+.game-pane {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.shadow {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.73);
 }
